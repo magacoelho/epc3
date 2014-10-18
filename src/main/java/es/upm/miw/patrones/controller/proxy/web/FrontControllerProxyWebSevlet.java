@@ -1,5 +1,5 @@
 package es.upm.miw.patrones.controller.proxy.web;
 
-public class FrontControllerProxyWeb {
+public class FrontControllerProxyWebSevlet {
 
 }
