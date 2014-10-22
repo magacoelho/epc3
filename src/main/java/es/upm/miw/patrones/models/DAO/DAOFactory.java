@@ -1,23 +1,14 @@
 package es.upm.miw.patrones.models.DAO;
 
 
-public class DAOFactory {
-	private static DAOFactory daoFactory=null;
+public abstract class DAOFactory {
+	protected static DAOFactory daoFactory=null;
 	
-	private DAOFactory(){
+	protected DAOFactory(){
 		
 	}
-	public static DAOFactory getFactory(){
-    	if (DAOFactory.daoFactory == null) { 
-    		DAOFactory.daoFactory = new DAOFactory(); 
-          } 
-       return DAOFactory.daoFactory; 
-  }
-	public RoundDAO getRoundDAO(){
-		return null;
-	}
-	public UserDAO getUserDAO(){
-		return null;
-	}
+	public abstract  DAOFactory getFactory();
+	public abstract RoundDAO getRoundDAO();
+	public abstract UserDAO getUserDAO();
 
 }
