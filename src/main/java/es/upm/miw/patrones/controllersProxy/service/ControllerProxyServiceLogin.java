@@ -1,5 +1,5 @@
 package es.upm.miw.patrones.controllersProxy.service;
 
-public class LoginControllerProxyService {
+public class ControllerProxyServiceLogin {
 
 }
