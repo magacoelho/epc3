@@ -1,15 +1,15 @@
 package es.upm.miw.patrones.models.DAO;
 
 public class MemDAOFactory extends DAOFactory{
-   private MemDAOFactory(){
+	private static MemDAOFactory memDaoFactory=null;
+    private MemDAOFactory(){
 	   super();
-   }
-	@Override
-	public DAOFactory getFactory() {
-		if (DAOFactory.daoFactory == null) { 
-    		DAOFactory.daoFactory = new MemDAOFactory(); 
+    }
+	public static DAOFactory getFactory() {
+		if (MemDAOFactory.memDaoFactory == null) { 
+    		MemDAOFactory.memDaoFactory = new MemDAOFactory(); 
           } 
-       return DAOFactory.daoFactory; 
+       return MemDAOFactory.memDaoFactory; 
 	}
 
 	@Override
