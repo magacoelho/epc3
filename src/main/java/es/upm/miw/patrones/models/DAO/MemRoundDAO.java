@@ -1,5 +1,8 @@
 package es.upm.miw.patrones.models.DAO;
 
-public class MemRoundDAO implements RoundDAO {
+import es.upm.miw.patrones.models.entities.Round;
 
+public class MemRoundDAO extends MemGenericDAO<Round, Integer> implements RoundDAO  {
+
+	
 }
