@@ -1,5 +1,7 @@
 package es.upm.miw.patrones.models.DAO;
 
-public interface RoundDAO {
+import es.upm.miw.patrones.models.entities.Round;
+
+public interface RoundDAO extends GenericDAO<Round,Integer>{
 
 }
